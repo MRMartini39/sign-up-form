@@ -21,33 +21,33 @@
             <h2>You <em>know</em> you want to.</h2>
         </div>
         <div class="form-div">
-            <form action="fake.url" method="post">
+            <form action="fake.url" method="post" id="form">
 
                 <fieldset>
                     <legend>Let's Do This!</legend>
 
                     <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
 
                     <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
 
                     <label for="phone-number">Phone Number</label>
-                    <input type="number" id="phone-number" name="phone-number">
+                    <input type="number" id="phone-number" name="phone-number" placeholder="0123456789" required>
 
                     <label for="password-initial">Password</label>
-                    <input type="password" id="password-initial" name="password">
+                    <input type="password" id="password-initial" name="password" required>
 
                     <label for="password-confirm">Confirm Password</label>
-                    <input type="password" id="password-confirm">
+                    <input type="password" id="password-confirm" required>
                 </fieldset>
             </form>
         </div>
         <div class="login-div">
-            <button class="create-acct-btn">Create Account</button>
+            <button type="submit" class="create-acct-btn" form="form">Create Account</button>
             <p class="login-text-basic">Already have an account? <span class="login-text-green">Log in</span></p>
 
         </div>
